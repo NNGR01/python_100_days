@@ -14,6 +14,7 @@ while machine_on:
     choice = input(f"☕ What would you like? {menu.get_items()}:  ").lower()
     if choice == "report":
         coffee_maker.report()
+        money.report()
     elif choice == 'off':
         machine_on = False
     else :
